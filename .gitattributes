@@ -1,0 +1,2 @@
+# Treat xcode proj as binary
+*.pbxproj -crlf -diff -merge

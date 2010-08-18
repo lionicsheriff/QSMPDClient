@@ -1,0 +1,20 @@
+libmpd/
+libmpdclient/
+# xcode noise
+build/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+
+*~.nib/ 
+
+
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
+
+# editor noise
+*.swp

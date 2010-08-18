@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F35FF4007F9ACD90056051D /* QSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35FF3C07F9ACD90056051D /* QSCore.framework */; };
+		7F35FF4207F9ACD90056051D /* QSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35FF3E07F9ACD90056051D /* QSFoundation.framework */; };
+		BBF5817C0B1D9D84003CFF55 /* QSMPDClientAction.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF5817B0B1D9D84003CFF55 /* QSMPDClientAction.m */; };
+		BBF581840B1D9DC3003CFF55 /* QSMPDClientSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF581830B1D9DC3003CFF55 /* QSMPDClientSource.m */; };
+		C9216721121B9F0D003737C8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9216720121B9F0D003737C8 /* Cocoa.framework */; };
+		C92167E7121BA165003737C8 /* libmpd.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C92167E3121BA165003737C8 /* libmpd.1.dylib */; };
+		C92167E8121BA165003737C8 /* libmpd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C92167E4121BA165003737C8 /* libmpd.a */; };
+		C92167E9121BA165003737C8 /* libmpd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C92167E5121BA165003737C8 /* libmpd.dylib */; };
+		C92167EA121BA165003737C8 /* libmpd.la in Resources */ = {isa = PBXBuildFile; fileRef = C92167E6121BA165003737C8 /* libmpd.la */; };
+		C9216800121BAAB4003737C8 /* MPDConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C92167FF121BAAB4003737C8 /* MPDConnection.m */; };
+		E1EAB046068128A200774DFF /* QSMPDClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB045068128A200774DFF /* QSMPDClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32DBCF980370C29C00C91783 /* QSMPDClient_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSMPDClient_Prefix.pch; sourceTree = "<group>"; };
+		7F35FF3C07F9ACD90056051D /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = QSFrameworks; };
+		7F35FF3D07F9ACD90056051D /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = QSFrameworks; };
+		7F35FF3E07F9ACD90056051D /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSFoundation.framework; sourceTree = QSFrameworks; };
+		7F35FF3F07F9ACD90056051D /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
+		7FFA8E9C0816CCCA00A858CD /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = QSFrameworks; };
+		7FFA8E9D0816CCCA00A858CD /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
+		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1AC9740486D14A00FE50C9 /* QSMPDClient.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSMPDClient.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF5817A0B1D9D84003CFF55 /* QSMPDClientAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSMPDClientAction.h; sourceTree = "<group>"; };
+		BBF5817B0B1D9D84003CFF55 /* QSMPDClientAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSMPDClientAction.m; sourceTree = "<group>"; };
+		BBF581820B1D9DC3003CFF55 /* QSMPDClientSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSMPDClientSource.h; sourceTree = "<group>"; };
+		BBF581830B1D9DC3003CFF55 /* QSMPDClientSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSMPDClientSource.m; sourceTree = "<group>"; };
+		C9216720121B9F0D003737C8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		C92167D8121BA140003737C8 /* debug_printf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug_printf.h; sourceTree = "<group>"; };
+		C92167D9121BA140003737C8 /* libmpd-database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmpd-database.h"; sourceTree = "<group>"; };
+		C92167DA121BA140003737C8 /* libmpd-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmpd-internal.h"; sourceTree = "<group>"; };
+		C92167DB121BA140003737C8 /* libmpd-player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmpd-player.h"; sourceTree = "<group>"; };
+		C92167DC121BA140003737C8 /* libmpd-playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmpd-playlist.h"; sourceTree = "<group>"; };
+		C92167DD121BA140003737C8 /* libmpd-status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmpd-status.h"; sourceTree = "<group>"; };
+		C92167DE121BA140003737C8 /* libmpd-sticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmpd-sticker.h"; sourceTree = "<group>"; };
+		C92167DF121BA140003737C8 /* libmpd-strfsong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmpd-strfsong.h"; sourceTree = "<group>"; };
+		C92167E0121BA140003737C8 /* libmpd-version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmpd-version.h"; sourceTree = "<group>"; };
+		C92167E1121BA140003737C8 /* libmpd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libmpd.h; sourceTree = "<group>"; };
+		C92167E2121BA140003737C8 /* libmpdclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libmpdclient.h; sourceTree = "<group>"; };
+		C92167E3121BA165003737C8 /* libmpd.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpd.1.dylib; sourceTree = "<group>"; };
+		C92167E4121BA165003737C8 /* libmpd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmpd.a; sourceTree = "<group>"; };
+		C92167E5121BA165003737C8 /* libmpd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpd.dylib; sourceTree = "<group>"; };
+		C92167E6121BA165003737C8 /* libmpd.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libmpd.la; sourceTree = "<group>"; };
+		C92167FE121BAAB4003737C8 /* MPDConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDConnection.h; sourceTree = "<group>"; };
+		C92167FF121BAAB4003737C8 /* MPDConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDConnection.m; sourceTree = "<group>"; };
+		E1EAB045068128A200774DFF /* QSMPDClient.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSMPDClient.m; sourceTree = "<group>"; };
+		E1EAB047068128A800774DFF /* QSMPDClient.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSMPDClient.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D1AC96E0486D14A00FE50C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F35FF4007F9ACD90056051D /* QSCore.framework in Frameworks */,
+				7F35FF4207F9ACD90056051D /* QSFoundation.framework in Frameworks */,
+				C9216721121B9F0D003737C8 /* Cocoa.framework in Frameworks */,
+				C92167E7121BA165003737C8 /* libmpd.1.dylib in Frameworks */,
+				C92167E8121BA165003737C8 /* libmpd.a in Frameworks */,
+				C92167E9121BA165003737C8 /* libmpd.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0259C574FE90428111CA0C5A /* QSMPDClient */ = {
+			isa = PBXGroup;
+			children = (
+				C92167D5121BA0BF003737C8 /* libmpd */,
+				32DBCF9E0370C38000C91783 /* Classes */,
+				32DBCF9F0370C38200C91783 /* Other Sources */,
+				0259C582FE90428111CA0C5A /* Resources */,
+				1ED78706FE9D4A0611CA0C5A /* Products */,
+				2E58F364FFB232C311CA0CBA /* Frameworks */,
+			);
+			name = QSMPDClient;
+			sourceTree = "<group>";
+		};
+		0259C582FE90428111CA0C5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1AC9730486D14A00FE50C9 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1ED78706FE9D4A0611CA0C5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1AC9740486D14A00FE50C9 /* QSMPDClient.qsplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E58F364FFB232C311CA0CBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9216720121B9F0D003737C8 /* Cocoa.framework */,
+				7F35FF3C07F9ACD90056051D /* QSCore.framework */,
+				7F35FF3E07F9ACD90056051D /* QSFoundation.framework */,
+				7FFA8E9C0816CCCA00A858CD /* QSEffects.framework */,
+				7FFA8E9D0816CCCA00A858CD /* QSInterface.framework */,
+				7FC20C8107FB741700FDD3CA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32DBCF9E0370C38000C91783 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BBF5817A0B1D9D84003CFF55 /* QSMPDClientAction.h */,
+				BBF5817B0B1D9D84003CFF55 /* QSMPDClientAction.m */,
+				E1EAB047068128A800774DFF /* QSMPDClient.h */,
+				E1EAB045068128A200774DFF /* QSMPDClient.m */,
+				BBF581820B1D9DC3003CFF55 /* QSMPDClientSource.h */,
+				BBF581830B1D9DC3003CFF55 /* QSMPDClientSource.m */,
+				C92167FE121BAAB4003737C8 /* MPDConnection.h */,
+				C92167FF121BAAB4003737C8 /* MPDConnection.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32DBCF9F0370C38200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF980370C29C00C91783 /* QSMPDClient_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		7FC20C8107FB741700FDD3CA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F35FF3D07F9ACD90056051D /* QSEffects.framework */,
+				7F35FF3F07F9ACD90056051D /* QSInterface.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C92167D5121BA0BF003737C8 /* libmpd */ = {
+			isa = PBXGroup;
+			children = (
+				C92167D7121BA109003737C8 /* lib */,
+				C92167D6121BA0EE003737C8 /* include */,
+			);
+			name = libmpd;
+			sourceTree = "<group>";
+		};
+		C92167D6121BA0EE003737C8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C92167D8121BA140003737C8 /* debug_printf.h */,
+				C92167D9121BA140003737C8 /* libmpd-database.h */,
+				C92167DA121BA140003737C8 /* libmpd-internal.h */,
+				C92167DB121BA140003737C8 /* libmpd-player.h */,
+				C92167DC121BA140003737C8 /* libmpd-playlist.h */,
+				C92167DD121BA140003737C8 /* libmpd-status.h */,
+				C92167DE121BA140003737C8 /* libmpd-sticker.h */,
+				C92167DF121BA140003737C8 /* libmpd-strfsong.h */,
+				C92167E0121BA140003737C8 /* libmpd-version.h */,
+				C92167E1121BA140003737C8 /* libmpd.h */,
+				C92167E2121BA140003737C8 /* libmpdclient.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		C92167D7121BA109003737C8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C92167E3121BA165003737C8 /* libmpd.1.dylib */,
+				C92167E4121BA165003737C8 /* libmpd.a */,
+				C92167E5121BA165003737C8 /* libmpd.dylib */,
+				C92167E6121BA165003737C8 /* libmpd.la */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1AC9600486D14A00FE50C9 /* QSMPDClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "QSMPDClient" */;
+			buildPhases = (
+				8D1AC9660486D14A00FE50C9 /* Resources */,
+				8D1AC96A0486D14A00FE50C9 /* Sources */,
+				8D1AC96E0486D14A00FE50C9 /* Frameworks */,
+				E1022B2806B3475D00299BEC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QSMPDClient;
+			productInstallPath = "$(HOME)/Developer/Palettes";
+			productName = QSMPDClient;
+			productReference = 8D1AC9740486D14A00FE50C9 /* QSMPDClient.qsplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0259C573FE90428111CA0C5A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 7F6B3EEF085CE8DF000735A8 /* Build configuration list for PBXProject "QSMPDClient" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 0259C574FE90428111CA0C5A /* QSMPDClient */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1AC9600486D14A00FE50C9 /* QSMPDClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1AC9660486D14A00FE50C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92167EA121BA165003737C8 /* libmpd.la in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E1022B2806B3475D00299BEC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/bltrversion $INFOPLIST_FILE";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D1AC96A0486D14A00FE50C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1EAB046068128A200774DFF /* QSMPDClient.m in Sources */,
+				BBF5817C0B1D9D84003CFF55 /* QSMPDClientAction.m in Sources */,
+				BBF581840B1D9DC3003CFF55 /* QSMPDClientSource.m in Sources */,
+				C9216800121BAAB4003737C8 /* MPDConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7F6B3EEC085CE8DF000735A8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(QSFrameworks)";
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QSMPDClient_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
+				OTHER_LDFLAGS = "-bundle";
+				PRODUCT_NAME = QSMPDClient;
+				WRAPPER_EXTENSION = qsplugin;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		7F6B3EED085CE8DF000735A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(QSFrameworks)";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QSMPDClient_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
+				OTHER_LDFLAGS = "-bundle";
+				PRODUCT_NAME = QSMPDClient;
+				WRAPPER_EXTENSION = qsplugin;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		7F6B3EF0085CE8DF000735A8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		7F6B3EF1085CE8DF000735A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_MODEL_TUNING = G5;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "QSMPDClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F6B3EEC085CE8DF000735A8 /* Development */,
+				7F6B3EED085CE8DF000735A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F6B3EEF085CE8DF000735A8 /* Build configuration list for PBXProject "QSMPDClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F6B3EF0085CE8DF000735A8 /* Development */,
+				7F6B3EF1085CE8DF000735A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0259C573FE90428111CA0C5A /* Project object */;
+}
