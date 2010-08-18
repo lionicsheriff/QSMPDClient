@@ -58,6 +58,7 @@
 				if (data->song->title){
 					title= [NSString stringWithUTF8String:data->song->title];
 				}
+				
 
 				newObject=[QSObject objectWithName:title];
 				[newObject setObject:title forType:QSMPDClientTrackType];
@@ -78,10 +79,14 @@
 				 [newObject setDetails: [NSString stringWithFormat:@"%@ - %@", artist, album]];
 */				 
 				
+				char *song_details[200];
+				mpd_song_markup(song_details, 200, "%artist% - %album%", data->song);
+				[newObject setDetails:[NSString stringWithUTF8String:song_details]];
 				
 				//file is the id (used in the add commands), playlists use 'id' and pos
 				NSString *file = [NSString stringWithUTF8String:data->song->file];
 				[newObject setObject:file forMeta:@"file"];
+				
 				
 								
 				[tracks addObject:newObject];
