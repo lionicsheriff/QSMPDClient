@@ -10,10 +10,22 @@
 		7F35FF4007F9ACD90056051D /* QSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35FF3C07F9ACD90056051D /* QSCore.framework */; };
 		7F35FF4207F9ACD90056051D /* QSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35FF3E07F9ACD90056051D /* QSFoundation.framework */; };
 		BBF5817C0B1D9D84003CFF55 /* QSMPDClientAction.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF5817B0B1D9D84003CFF55 /* QSMPDClientAction.m */; };
-		BBF581840B1D9DC3003CFF55 /* QSMPDClientSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF581830B1D9DC3003CFF55 /* QSMPDClientSource.m */; };
+		BBF581840B1D9DC3003CFF55 /* QSMPDClientTrackSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF581830B1D9DC3003CFF55 /* QSMPDClientTrackSource.m */; };
+		C910EC9E121D24920025A366 /* customize.icns in Resources */ = {isa = PBXBuildFile; fileRef = C910EC97121D24920025A366 /* customize.icns */; };
+		C910EC9F121D24920025A366 /* developerfolder.icns in Resources */ = {isa = PBXBuildFile; fileRef = C910EC98121D24920025A366 /* developerfolder.icns */; };
+		C910ECA0121D24920025A366 /* music.icns in Resources */ = {isa = PBXBuildFile; fileRef = C910EC99121D24920025A366 /* music.icns */; };
+		C910ECA1121D24920025A366 /* musicfolder.icns in Resources */ = {isa = PBXBuildFile; fileRef = C910EC9A121D24920025A366 /* musicfolder.icns */; };
+		C910ECA2121D24920025A366 /* public.icns in Resources */ = {isa = PBXBuildFile; fileRef = C910EC9B121D24920025A366 /* public.icns */; };
+		C910ECA3121D24920025A366 /* publicfolder.icns in Resources */ = {isa = PBXBuildFile; fileRef = C910EC9C121D24920025A366 /* publicfolder.icns */; };
+		C910ECA4121D24920025A366 /* smartfolder.icns in Resources */ = {isa = PBXBuildFile; fileRef = C910EC9D121D24920025A366 /* smartfolder.icns */; };
 		C9216721121B9F0D003737C8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9216720121B9F0D003737C8 /* Cocoa.framework */; };
 		C9216800121BAAB4003737C8 /* MPDClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C92167FF121BAAB4003737C8 /* MPDClient.m */; };
 		C9463923121CBCA100769473 /* libmpd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9463922121CBCA100769473 /* libmpd.dylib */; };
+		C984770D121D0CFF0069EA6D /* iTunesAlbumBrowserIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9847709121D0CFF0069EA6D /* iTunesAlbumBrowserIcon.png */; };
+		C984770E121D0CFF0069EA6D /* iTunesArtistBrowserIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C984770A121D0CFF0069EA6D /* iTunesArtistBrowserIcon.png */; };
+		C984770F121D0CFF0069EA6D /* iTunesComposerBrowserIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C984770B121D0CFF0069EA6D /* iTunesComposerBrowserIcon.png */; };
+		C9847710121D0CFF0069EA6D /* iTunesGenreBrowserIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C984770C121D0CFF0069EA6D /* iTunesGenreBrowserIcon.png */; };
+		C9847712121D0F880069EA6D /* mpd.png in Resources */ = {isa = PBXBuildFile; fileRef = C9847711121D0F880069EA6D /* mpd.png */; };
 		E1EAB046068128A200774DFF /* QSMPDClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB045068128A200774DFF /* QSMPDClient.m */; };
 /* End PBXBuildFile section */
 
@@ -29,12 +41,24 @@
 		8D1AC9740486D14A00FE50C9 /* QSMPDClient.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSMPDClient.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF5817A0B1D9D84003CFF55 /* QSMPDClientAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSMPDClientAction.h; sourceTree = "<group>"; };
 		BBF5817B0B1D9D84003CFF55 /* QSMPDClientAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSMPDClientAction.m; sourceTree = "<group>"; };
-		BBF581820B1D9DC3003CFF55 /* QSMPDClientSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSMPDClientSource.h; sourceTree = "<group>"; };
-		BBF581830B1D9DC3003CFF55 /* QSMPDClientSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSMPDClientSource.m; sourceTree = "<group>"; };
+		BBF581820B1D9DC3003CFF55 /* QSMPDClientTrackSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSMPDClientTrackSource.h; sourceTree = "<group>"; };
+		BBF581830B1D9DC3003CFF55 /* QSMPDClientTrackSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSMPDClientTrackSource.m; sourceTree = "<group>"; };
+		C910EC97121D24920025A366 /* customize.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = customize.icns; sourceTree = "<group>"; };
+		C910EC98121D24920025A366 /* developerfolder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = developerfolder.icns; sourceTree = "<group>"; };
+		C910EC99121D24920025A366 /* music.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = music.icns; sourceTree = "<group>"; };
+		C910EC9A121D24920025A366 /* musicfolder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = musicfolder.icns; sourceTree = "<group>"; };
+		C910EC9B121D24920025A366 /* public.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = public.icns; sourceTree = "<group>"; };
+		C910EC9C121D24920025A366 /* publicfolder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = publicfolder.icns; sourceTree = "<group>"; };
+		C910EC9D121D24920025A366 /* smartfolder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = smartfolder.icns; sourceTree = "<group>"; };
 		C9216720121B9F0D003737C8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		C92167FE121BAAB4003737C8 /* MPDClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDClient.h; sourceTree = "<group>"; };
 		C92167FF121BAAB4003737C8 /* MPDClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDClient.m; sourceTree = "<group>"; };
 		C9463922121CBCA100769473 /* libmpd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpd.dylib; sourceTree = "<group>"; };
+		C9847709121D0CFF0069EA6D /* iTunesAlbumBrowserIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesAlbumBrowserIcon.png; sourceTree = "<group>"; };
+		C984770A121D0CFF0069EA6D /* iTunesArtistBrowserIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtistBrowserIcon.png; sourceTree = "<group>"; };
+		C984770B121D0CFF0069EA6D /* iTunesComposerBrowserIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesComposerBrowserIcon.png; sourceTree = "<group>"; };
+		C984770C121D0CFF0069EA6D /* iTunesGenreBrowserIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesGenreBrowserIcon.png; sourceTree = "<group>"; };
+		C9847711121D0F880069EA6D /* mpd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mpd.png; sourceTree = "<group>"; };
 		E1EAB045068128A200774DFF /* QSMPDClient.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSMPDClient.m; sourceTree = "<group>"; };
 		E1EAB047068128A800774DFF /* QSMPDClient.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSMPDClient.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +94,18 @@
 		0259C582FE90428111CA0C5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C910EC97121D24920025A366 /* customize.icns */,
+				C910EC98121D24920025A366 /* developerfolder.icns */,
+				C910EC99121D24920025A366 /* music.icns */,
+				C910EC9A121D24920025A366 /* musicfolder.icns */,
+				C910EC9B121D24920025A366 /* public.icns */,
+				C910EC9C121D24920025A366 /* publicfolder.icns */,
+				C910EC9D121D24920025A366 /* smartfolder.icns */,
+				C9847711121D0F880069EA6D /* mpd.png */,
+				C9847709121D0CFF0069EA6D /* iTunesAlbumBrowserIcon.png */,
+				C984770A121D0CFF0069EA6D /* iTunesArtistBrowserIcon.png */,
+				C984770B121D0CFF0069EA6D /* iTunesComposerBrowserIcon.png */,
+				C984770C121D0CFF0069EA6D /* iTunesGenreBrowserIcon.png */,
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
 			);
 			name = Resources;
@@ -103,8 +139,8 @@
 				BBF5817B0B1D9D84003CFF55 /* QSMPDClientAction.m */,
 				E1EAB047068128A800774DFF /* QSMPDClient.h */,
 				E1EAB045068128A200774DFF /* QSMPDClient.m */,
-				BBF581820B1D9DC3003CFF55 /* QSMPDClientSource.h */,
-				BBF581830B1D9DC3003CFF55 /* QSMPDClientSource.m */,
+				BBF581820B1D9DC3003CFF55 /* QSMPDClientTrackSource.h */,
+				BBF581830B1D9DC3003CFF55 /* QSMPDClientTrackSource.m */,
 				C92167FE121BAAB4003737C8 /* MPDClient.h */,
 				C92167FF121BAAB4003737C8 /* MPDClient.m */,
 			);
@@ -172,6 +208,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C984770D121D0CFF0069EA6D /* iTunesAlbumBrowserIcon.png in Resources */,
+				C984770E121D0CFF0069EA6D /* iTunesArtistBrowserIcon.png in Resources */,
+				C984770F121D0CFF0069EA6D /* iTunesComposerBrowserIcon.png in Resources */,
+				C9847710121D0CFF0069EA6D /* iTunesGenreBrowserIcon.png in Resources */,
+				C9847712121D0F880069EA6D /* mpd.png in Resources */,
+				C910EC9E121D24920025A366 /* customize.icns in Resources */,
+				C910EC9F121D24920025A366 /* developerfolder.icns in Resources */,
+				C910ECA0121D24920025A366 /* music.icns in Resources */,
+				C910ECA1121D24920025A366 /* musicfolder.icns in Resources */,
+				C910ECA2121D24920025A366 /* public.icns in Resources */,
+				C910ECA3121D24920025A366 /* publicfolder.icns in Resources */,
+				C910ECA4121D24920025A366 /* smartfolder.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +248,7 @@
 			files = (
 				E1EAB046068128A200774DFF /* QSMPDClient.m in Sources */,
 				BBF5817C0B1D9D84003CFF55 /* QSMPDClientAction.m in Sources */,
-				BBF581840B1D9DC3003CFF55 /* QSMPDClientSource.m in Sources */,
+				BBF581840B1D9DC3003CFF55 /* QSMPDClientTrackSource.m in Sources */,
 				C9216800121BAAB4003737C8 /* MPDClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "$(QSFrameworks)";
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_DYNAMIC_NO_PIC = NO;
