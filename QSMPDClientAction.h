@@ -9,8 +9,7 @@
 #import <QSCore/QSObject.h>
 #import <QSCore/QSActionProvider.h>
 #import "QSMPDClientAction.h"
-#import "libmpd.h"
-#import "MPDConnection.h"
+#import "MPDClient.h"
 
 #define kQSMPDClientAction @"QSMPDClientAction"
 

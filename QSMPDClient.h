@@ -11,13 +11,4 @@
 {
 }
 @end
-/*
-@interface QSMPDClientTrack : NSObject
-{
-}
-@end
-@interface QSMPDClientAlbum : NSObject
-{
-}
-@end
-*/
+

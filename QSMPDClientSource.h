@@ -7,8 +7,8 @@
 //
 
 #import <QSCore/QSObjectSource.h>
-#import "libmpd.h"
-#import "MPDConnection.h"
+#import <libmpd.h>
+#import "MPDClient.h"
 
 #define QSMPDClientType @"QSMPDClientType"
 #define QSMPDClientTrackType @"QSMPDClientTrackType"

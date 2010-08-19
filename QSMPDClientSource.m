@@ -12,7 +12,7 @@
 //true = up to date, so don't rescan
 @implementation QSMPDClientSource
 - (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry{
-	MpdObj *obj = [MPDConnection connect];
+	MpdObj *obj = qsmpd_connect();
 	mpd_status_update(obj);
     u_long updatetime = mpd_server_get_database_update_time(obj);
     u_long lastupdate = 1;
