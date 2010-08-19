@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>QSMPDClient</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.thecyberplains.Quicksilver.MPDClient</string>
+	<string>com.thecyberplains.qsmpd</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleVersion</key>
-	<string>94</string>
+	<string>D9</string>
 	<key>NSPrincipalClass</key>
 	<string>QSMPDClient</string>
 	<key>QSActions</key>
@@ -62,7 +62,9 @@
 			<array>
 				<dict>
 					<key>ID</key>
-					<string>QSPresetMPDTracks</string>
+					<string>QSPresetMPDClientTracks</string>
+					<key>details</key>
+					<string>MPD Tracks</string>
 					<key>enabled</key>
 					<true/>
 					<key>icon</key>
@@ -74,7 +76,7 @@
 				</dict>
 			</array>
 			<key>enabled</key>
-			<true/>
+			<false/>
 			<key>icon</key>
 			<string>com.apple.iTunes</string>
 			<key>name</key>
@@ -92,7 +94,7 @@
 		</dict>
 		<key>QSBundleChildHandlers</key>
 		<dict>
-			<key>com.apple.whatever</key>
+			<key>com.thecyberplains.qsmpd</key>
 			<string>QSMPDClientSource</string>
 		</dict>
 		<key>QSObjectHandlers</key>

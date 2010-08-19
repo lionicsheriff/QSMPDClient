@@ -40,14 +40,12 @@
     NSMutableArray *objects=[NSMutableArray arrayWithCapacity:1];
     QSObject *newObject;
 	
-	MpdObj *obj = [MPDConnection connect];
-
-	
-
-
+	MpdObj *obj = qsmpd_connect();
 
 	// Add tracks
 	MpdData *data = mpd_database_get_complete(obj);
+
+	//MpdData *data = mpd_database_get_directory_recursive(obj,"/");
 	NSMutableArray *tracks=[NSMutableArray arrayWithCapacity:1];
 	if(data){
 		do{
@@ -66,40 +64,38 @@
 				[newObject setPrimaryType:QSMPDClientTrackType];
 				
 				//Pretty labels
-/*				// Current query doesn't get tags I think.
 				 NSString *artist = @"Unknown";
-				 if (data->song->artist){
-				 NSString *artist =  [NSString stringWithUTF8String:data->song->artist];
+				if (data->song->artist){
+					artist =  [NSString stringWithUTF8String:data->song->artist];
 				 }
+
 				 NSString *album = @"Unknown";
-				 if (song_info->album){
-				 NSString *artist =  [NSString stringWithUTF8String:song_info->album];
+				 if (data->song->album){
+					album =  [NSString stringWithUTF8String:data->song->album];
 				 }
 				 
 				 [newObject setDetails: [NSString stringWithFormat:@"%@ - %@", artist, album]];
-*/				 
-				
-				char *song_details[200];
-				mpd_song_markup(song_details, 200, "%artist% - %album%", data->song);
-				[newObject setDetails:[NSString stringWithUTF8String:song_details]];
-				
+
 				//file is the id (used in the add commands), playlists use 'id' and pos
 				NSString *file = [NSString stringWithUTF8String:data->song->file];
 				[newObject setObject:file forMeta:@"file"];
 				
-				
+				//[newObject setParentID:@"QSMPD_Tracks"];
 								
-				[tracks addObject:newObject];
+				//[tracks addObject:newObject];
+				[objects addObject:newObject];
 				data = mpd_data_get_next(data);
 			}
 		}while(data);
 	}
 	newObject=[QSObject objectWithName:@"Tracks"];
-    //[newObject setObject:@"Tracks" forType:@"QSGroup"];
+//    [newObject setObject:@"Tracks" forType:@"QSGroupObject"];
+//	[newObject setIdentifier:@"QSMPD_Tracks"];
 	[newObject setChildren:tracks];
-	[objects addObject:newObject];
+//	[newObject loadChildren];
+	//[objects addObject:newObject];
 	
-	mpd_free(obj);	
+	qsmpd_close(obj);
     return objects;
     
 }
@@ -111,11 +107,12 @@
 - (void)setQuickIconForObject:(QSObject *)object{
     [object setIcon:nil]; // An icon that is either already in memory or easy to load
 }
+ */
 - (BOOL)loadIconForObject:(QSObject *)object{
-	return NO;
-    id data=[object objectForType:kQSMPDClientType];
-	[object setIcon:nil];
+	//return NO;
+   // id data=[object objectForType:kQSMPDClientType];
+//	[object setIcon:nil];
     return YES;
 }
-*/
+
 @end
