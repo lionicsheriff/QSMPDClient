@@ -13,25 +13,22 @@
 - (QSObject *)addTrack:(QSObject *)dObject{
 	NSString *song_file = [dObject objectForMeta:@"file"];
 	MpdObj *conn = qsmpd_connect();
-	qsmpd_addSong(conn, song_file);
+	qsmpd_add_song(conn, song_file);
 	qsmpd_close(conn);
 	return nil;
 }
 - (QSObject *)addTrackAndPlay:(QSObject *)dObject{
 	NSString *song_file = [dObject objectForMeta:@"file"];
 	MpdObj *conn = qsmpd_connect();
-	int pos = qsmpd_addSong(conn, song_file);
-	qsmpd_playSong(conn, pos);
+	qsmpd_add_song_not_exists_and_play(conn, song_file);
 	qsmpd_close(conn);
 	return nil;
 }
 
-- (QSObject *)addTrackToNext:(QSObject *)dObject{
+- (QSObject *)queueTrack:(QSObject *)dObject{
 	NSString *song_file = [dObject objectForMeta:@"file"];
 	MpdObj *conn = qsmpd_connect();
-	int pos = qsmpd_addSong(conn, song_file);
-	qsmpd_playSong(conn, pos);
-	
+	qsmpd_add_song_next(conn, song_file);
 	qsmpd_close(conn);
 	return nil;
 }

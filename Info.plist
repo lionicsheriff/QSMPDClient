@@ -15,12 +15,29 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleVersion</key>
-	<string>FC</string>
+	<string>117</string>
 	<key>NSPrincipalClass</key>
 	<string>QSMPDClient</string>
 	<key>QSActions</key>
 	<dict>
-		<key>AddTrackToCurrent</key>
+		<key>AddTrack</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSMPDClientAction</string>
+			<key>actionSelector</key>
+			<string>addTrack:</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSMPDClientTrackType</string>
+			</array>
+			<key>name</key>
+			<string>Add Track</string>
+			<key>precedence</key>
+			<string>99</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+		<key>AddTrackAndPlay</key>
 		<dict>
 			<key>actionClass</key>
 			<string>QSMPDClientAction</string>
@@ -32,6 +49,23 @@
 			</array>
 			<key>name</key>
 			<string>Play</string>
+			<key>precedence</key>
+			<string>99</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+		<key>QueueTrack</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSMPDClientAction</string>
+			<key>actionSelector</key>
+			<string>queueTrack:</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSMPDClientTrackType</string>
+			</array>
+			<key>name</key>
+			<string>Enqueue Track</string>
 			<key>precedence</key>
 			<string>99</string>
 			<key>validatesObjects</key>
@@ -60,15 +94,6 @@
 		<dict>
 			<key>ID</key>
 			<string>QSMPDClientGroup</string>
-			<key>settings</key>
-			<dict>
-				<key>host</key>
-				<string>localhost</string>
-				<key>port</key>
-				<string>6600</string>
-				<key>lastupdate</key>
-				<string>0</string>
-			</dict>
 			<key>children</key>
 			<array>
 				<dict>
@@ -92,6 +117,15 @@
 			<string>musicfolder</string>
 			<key>name</key>
 			<string>MPD</string>
+			<key>settings</key>
+			<dict>
+				<key>host</key>
+				<string>localhost</string>
+				<key>lastupdate</key>
+				<string>0</string>
+				<key>port</key>
+				<string>6600</string>
+			</dict>
 			<key>source</key>
 			<string>QSGroupObjectSource</string>
 		</dict>

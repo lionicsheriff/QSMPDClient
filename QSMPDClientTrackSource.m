@@ -15,9 +15,7 @@
 	MpdObj *obj = qsmpd_connect();
 	mpd_status_update(obj);
     u_long updatetime = mpd_server_get_database_update_time(obj);
-     NSMutableDictionary *settings = [theEntry objectForKey:kItemSettings];
-	u_long lastupdate = (u_long)[settings objectForKey:<#(id)aKey#>
-	
+	u_long lastupdate = 1 ;
 	if (updatetime>lastupdate){
 		lastupdate = (u_long)time(NULL);
 		return FALSE;
@@ -78,7 +76,9 @@
 				 }
 				 
 				 [newObject setDetails: [NSString stringWithFormat:@"%@ - %@", artist, album]];
-
+				//basic album searching in this catalogue
+				[newObject setLabel:album];
+				
 				//file is the id (used in the add commands), playlists use 'id' and pos
 				NSString *file = [NSString stringWithUTF8String:data->song->file];
 				[newObject setObject:file forMeta:@"file"];

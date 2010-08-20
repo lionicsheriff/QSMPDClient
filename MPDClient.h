@@ -11,10 +11,17 @@
 MpdObj *qsmpd_connect(void);
 void qsmpd_close(MpdObj *conn);
 
-int qsmpd_addSong(MpdObj *conn,NSString *path);
-void qsmpd_addSongAtPosition(MpdObj *conn,NSString *path,int pos);
+void qsmpd_play(MpdObj *conn);
+void qsmpd_toggle(MpdObj *conn);
+void qsmpd_stop(MpdObj *conn);
+void qsmpd_next(MpdObj *conn);
+void qsmpd_prev(MpdObj *conn);
 
-void qsmpd_playSong(MpdObj *conn,int pos);
+void qsmpd_clear(MpdObj *conn);
 
-void qsmpd_addSongAndPlay(MpdObj *conn,NSString *path);
-void qsmpd_addSongNext(MpdObj *conn,NSString *path);
+int qsmpd_add_song(MpdObj *conn,NSString *path);
+void qsmpd_add_song_at_position(MpdObj *conn,NSString *path,int pos);
+void qsmpd_play_song(MpdObj *conn,int pos);
+void qsmpd_add_song_and_play(MpdObj *conn,NSString *path);
+void qsmpd_add_song_next(MpdObj *conn,NSString *path);
+
