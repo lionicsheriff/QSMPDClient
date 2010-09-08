@@ -1,0 +1,8 @@
+Add/Play Album action for tracks (add/play album track belongs to) -- maybe return album object?
+Fix update checking (currently always assumes out of date)
+Make enqueue remove queued tracks after play
+Fix icons
+Album catalogue
+Artist catalogue
+MPD commands (play,stop etc.)
+Preferences
