@@ -1,5 +1,6 @@
 libmpd/
 libmpdclient/
+libmpd.dylib
 # xcode noise
 build/
 *.xcodeproj/*
